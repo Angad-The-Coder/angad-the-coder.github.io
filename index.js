@@ -1,3 +1,5 @@
+/* Trigger hamburger animation */
+
 function barsToggle(x) {
   $(x).toggleClass("change");
   if ($("#menu_items").height() == 0) {
@@ -7,13 +9,13 @@ function barsToggle(x) {
   }
 }
 
-if (window.innerWidth < 1100) {
+if (window.innerWidth < 850) {
   $("#hamburger").css("visibility", "visible");
   $("#nav_items").css("visibility", "hidden");
 }
 
 window.onresize = function() {
-  if (window.innerWidth < 1100) {
+  if (window.innerWidth < 850) {
     $("#hamburger").css("opacity", 1);
     $("#hamburger").css("visibility", "visible");
     $("#nav_items").css("opacity", 0);
@@ -30,9 +32,10 @@ window.onresize = function() {
   }
 }
 
+/* Check if element is visible on user's screen */
+
 function is_visible(elem) {
   var docViewTop = $(window).scrollTop();
-  var docViewBottom = docViewTop + $(window).height();
 
   var elemTop = $(elem).offset().top - 60;
   var elemBottom = elemTop + $(elem).height();
@@ -40,11 +43,14 @@ function is_visible(elem) {
   return ((elemBottom >= docViewTop) && (elemTop <= docViewTop));
 }
 
+/* Set a certain element to be active on the navigation menus */
 
 function set_active(class_name, type="a") {
   $(type).removeClass("active");
   $(class_name).addClass("active");
 }
+
+/* Change 'active' page in navigation menus on scroll*/
 
 $(window).scroll(function() {
   if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
@@ -112,5 +118,5 @@ for(let i = 0; i < t_list.length; i++){
   }
 }     
 
-let who_i_am_list = ["an artist.", "logical.", "diligent.", "Angad Bhargav."]
+let who_i_am_list = ["artistic.", "logical.", "diligent.", "Angad Bhargav."]
 type(".cursor", "#who_i_am", who_i_am_list);
