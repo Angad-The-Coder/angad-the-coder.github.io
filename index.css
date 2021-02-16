@@ -24,6 +24,15 @@ a {
     overflow: visible;
     text-align: left;
 }
+.center_div a{
+    display: inline-block;
+    background: linear-gradient(to bottom, #0EC8F7, #9DB72F);
+    background: -webkit-linear-gradient(to bottom, #0EC8F7, #9DB72F);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
 .img_div {
     margin: 20px 0;
     text-align: center;
@@ -68,6 +77,15 @@ a {
     background: linear-gradient(to right, #0EC8F7, #9DB72F);
     background: -webkit-linear-gradient(to right, #0EC8F7, #9DB72F);
     color: white;
+}
+.gradient_div a {
+    display: inline-block;
+    background: linear-gradient(to bottom, #1D3EF7, #11839c);
+    background: -webkit-linear-gradient(to bottom, #1D3EF7, #11839c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 .section {
     text-align: center;
