@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/website_icon.svg">
+  <title>Angad Bhargav - About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="nav_menu">
+    <a id="hamburger" class="hamburger" role="button" onclick="barsToggle(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </a>
+    <div id="nav_items">
+      <a class="active home" href="#home">Home</a>
+      <a class="myBackground" href="#my_background">My Background</a>
+      <a class="myWebDevJourney" href="#my_webdev_journey">My WebDev Journey</a>
+      <a class="myHobbies" href="#my_hobbies">My Hobbies</a>
+    </div>
+  </div>
+  <div id="menu_items" style="height: 0px;">
+    <div id="menu_text">
+      <a class="active home" href="#home">Home</a>
+      <a class="myBackground" href="#my_background">My Background</a>
+      <a class="myWebDevJourney" href="#my_webdev_journey">My WebDev Journey</a>
+      <a class="myHobbies" href="#my_hobbies">My Hobbies</a>
+    </div>
+  </div>
+  <div class="section" id="home">
+    <div class="center_div" id="home_content">
+      <div id="photo">
+        <img src="images/photo_of_me.png" class="circle_crop" id="photo_of_me" width="100%">
+      </div>
+      <div class="typing_container" id="who_i_am_cont">
+        <p class="medium">I am<br><span class="typing_text big" id="who_i_am"></span><span class="cursor big">|</span></p>
+        <script src="index.js"></script>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="my_background">
+    <div class="center_div" id="background_content">
+      <h2 class="gradient_text">My Background</h2>
+      <p>I am currently a freshman at Amador Valley High School with years-long passions for programming and graphic design. Web development and frontend design is a perfect collaboration of both these interests and I find it incredibly fulfilling.
+        <br><br>
+        As a programmer, I am equipped with skills in Python, C++, and HTML/CSS/JavaScript—the languages I used to build this website. In addition, as a relative newcomer to web development, I am eager to learn new frameworks and languages to enhance my ability in crafting elegant websites.
+        <br><br>
+        As a graphic designer, I am capable of photo editing in Adobe Photoshop, Gimp, and Paint.net. I’ve been using these skills regularly since elementary school, whether that be to strengthen one of my school projects or to design my middle school’s eighth-grade graduation t-shirt (shown below).
+      </p>
+      <div class="img_div">
+        <img class="no_crop" id="ms_tShirt" src="images/ms_tShirt.png" style="width: min(500px, 100%);">
+        <p class="img_caption">Photo of my eighth-grade graduation T-shirt, which I designed.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section gradient_div" id="my_webdev_journey">
+    <div class="center_div" id="webdev_content">
+      <h2>My WebDev Journey</h2>
+      <p>During winter break of 2020, a couple of my friends and I were participating in a program called Technology Student Association (TSA). In TSA, there are many different events one may compete in, all targeting various aspects of technology. As someone with a fascination for all things software, I had signed up with my friends for all of the software-related events. One of these events in particular was Webmaster. The goal of Webmaster is to create two websites: one advertising your school’s TSA charter, and the other—called your design brief—serving as response to a specific prompt. This year’s prompt for the design brief was to create a website about a fictional telecommunications company. Originally, as I had no experience in web development, my job was to help with all the graphic design needed to make our website attractive. However, since we had assigned all of the programming work to a single person, we needed someone else to help out and code our design brief website. As I had been interested in web development for a long time, I figured I might as well give it a shot and, over the span of winter break, I learned how to code in HTML/CSS/JS and completed my team’s design brief, the first website I ever made. As a result of my hard work, my website passed the regional competition and will be judged in the State competition later this year. Since then, I’ve been looking for new opportunities for me to explore the world of web development and refine my skills.
+      </p>
+    </div>
+  </div>
+  <div class="section" id="my_hobbies">
+    <div class="center_div" id="hobbies_content">
+      <h2 class="gradient_text">My Hobbies</h2>
+      <p>In my free time, I enjoy playing the oboe, fencing, graphic design, and programming. I’ve been playing the oboe since sixth grade and, last year, I was first chair in my middle school’s wind ensemble.</p>
+      <div class="img_div">
+        <img class="no_crop" id="oboe_photo" src="images/oboe_photo.png" style="width: min(300px, 100%);">
+        <p class="img_caption">Photo of me playing the oboe at a concert in seventh grade.</p>
+      </div>
+      <p>In addition, I have been an avid fencer since the summer of fifth grade and I’ve competed in various regional and national competitions across the country.</p>
+      <div class="img_div">
+        <img class="no_crop" id="fencing_photo" src="images/fencing_photo.png" style="width: min(800px, 100%);">
+        <p class="img_caption">Photo of me fencing at the 2019 Fencing Summer Nationals competition</p>
+      </div>
+      <p>Next, as stated in my background, I have a strong passion for graphic design and I’ve pursued it since the second grade. Very often, I’ll find myself doing random graphic design projects just because I find it extremely calming. Lastly, the activity I’ve spent most of my time on this year is programming. Although I have been familiar with basic Python since fifth grade, I’ve only started to code religiously since quarantine began. I’ve always had a strong affinity for math and logic and coding is where I feel I’m able to let these interests shine.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
