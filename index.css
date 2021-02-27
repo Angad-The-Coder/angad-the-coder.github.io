@@ -14,7 +14,18 @@ p {
 a {
     text-decoration: none;
 }
- 
+
+/* Scrollbar Styles: */
+::-webkit-scrollbar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #36C3BE, #6DBD72);
+    background: -webkit-linear-gradient(to bottom, #36C3BE, #6DBD72);
+    border-radius: 10px;
+}
+
 /*Class Styles:*/
  
 .center_div {
