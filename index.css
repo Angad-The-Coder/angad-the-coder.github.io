@@ -1,5 +1,5 @@
 html {scroll-behavior: smooth;}
-
+ 
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -14,9 +14,9 @@ p {
 a {
     text-decoration: none;
 }
-
+ 
 /*Class Styles:*/
-
+ 
 .center_div {
     margin: 50px 0;
     max-width: 70%;
@@ -24,7 +24,7 @@ a {
     overflow: visible;
     text-align: left;
 }
-.center_div a{
+.center_div a {
     display: inline-block;
     background: linear-gradient(to bottom, #0EC8F7, #9DB72F);
     background: -webkit-linear-gradient(to bottom, #0EC8F7, #9DB72F);
@@ -32,6 +32,15 @@ a {
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+}
+.center_div a:hover {
+    display: inline-block;
+    background: linear-gradient(to top, #0EC8F7, #9DB72F);
+    background: -webkit-linear-gradient(to top, #0EC8F7, #9DB72F);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #FFFFFF44;
+    -webkit-text-fill-color: #FFFFFF44;
 }
 .img_div {
     margin: 20px 0;
@@ -87,6 +96,15 @@ a {
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
+.gradient_div a:hover {
+    display: inline-block;
+    background: linear-gradient(to top, #1D3EF7, #11839c);
+    background: -webkit-linear-gradient(to top, #1D3EF7, #11839c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #FFFFFF44;
+    -webkit-text-fill-color: #FFFFFF44;
+}
 .section {
     text-align: center;
 }
@@ -96,10 +114,10 @@ a {
 .big {
     font-size: 58px;
 }
-
-
+ 
+ 
 /*Navigation Menu Styles*/
-
+ 
 /*Desktop Menu*/
 #nav_menu {
     z-index: 200;
@@ -150,15 +168,15 @@ a {
     border-radius: 25px;
     transition: 0.3s;
 }
-
-/*Hamburger Animation*/
+ 
+/*Mobile Hamburger Animation*/
 .bar1 {width: 30px;}
 .bar2 {width: 20px;}
 .bar3 {width: 10px;}
-
+ 
 .hamburger:hover div {width: 30px;}
 .hamburger:hover {cursor: pointer;}
-
+ 
 .change .bar1 {
     -webkit-transform: translate(0px, 9px) rotate(-135deg);
     transform: translate(0px, 9px) rotate(-135deg);
@@ -171,7 +189,7 @@ a {
     transform: translate(0x, -9px) rotate(135deg);
     width: 30px;
 }
-
+ 
 /*Mobile Menu*/
 #menu_items {
     z-index: 199;
@@ -205,10 +223,10 @@ a {
     pointer-events: none;
     filter: opacity(.5);
 }
-
-
+ 
+ 
 /*Distinct Homepage Styles*/
-
+ 
 #photo{
     width: 300px;
 }
@@ -224,7 +242,7 @@ a {
     max-width: none;
     min-width: 50%;
 }
-
+ 
 /* Distinct Styles for Desktop: */
 @media (min-width: 750px) {
     #home{
